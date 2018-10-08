@@ -20,5 +20,10 @@ public class ControllerText {
     public String processText(@RequestBody String text){
         return  serviceText.processText(text);
     }
+    
+     @RequestMapping(value = "/text", method = RequestMethod.GET)
+    public String DisplayText(){
+        return  "Veuillez envoyer une requête POST vers cet url";
+    }
 
 }
